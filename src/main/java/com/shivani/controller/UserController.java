@@ -24,7 +24,7 @@ public class UserController {
 	public User createUser(@RequestBody User user) throws Exception{
 		
 	     User isExist = userRepository.findByEmail(user.getEmail());
-	     if(isExist==null)
+	     if(isExist!=null)
 	     {
 	    	throw new Exception("user already exists with email "+user.getEmail()); 
 	     }
