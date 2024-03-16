@@ -9,6 +9,6 @@ public class HomeController {
 	@GetMapping
 	 public String homeController()
 	 {
-		 return "welcome";
+		 return "welcome to my app";
 	 }
 }
